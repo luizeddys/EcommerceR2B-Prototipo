@@ -1,4 +1,4 @@
-# EcommerceR2B-Prototipo
+# E-commerce R2 Barcode - Prototipo
 Protótipo Front End do E-commerce R2Barcode.
 
 Este repositório armazena o conceito inicial do projeto de desenvolvimento do e-commerce da empresa R2 Barcode.
