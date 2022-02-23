@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="mini-barra">
+            <div class="mini-barra-esquerdo">
+                <b>Dólar do dia: R$ 5,5286</b>
+            </div>
+            <div class="mini-barra-direito">
+                <a href="minha-conta.html">Minha Conta</a>
+                <a href="configuracoes.html">Configurações</a>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section class="barra-superior">
+            <div class="logo-sec">
+                <img src="../img/preferences/logo.png" alt="">
+            </div>
+            <div class="menu-sec">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="cadastros.html">Cadastros</a></li>
+                        <li><a href="orcamentos.html">Orçamentos</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                        <li><a href="estoque.html">Estoque</a></li>
+                        <li><a href="mais.html">Mais Opções</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="info-sec">
+                <!-- <p>Bem-Vindo Luiz</p> -->
+                <p>Bem-Vindo Admin</p>
+            </div>
+            <div class="user-icon">
+                <img src="../img/system/user-icon.png" alt="">
+            </div>
+            <div class="logoff">
+                <!-- <button>Sair</button> -->
+                <button>Entrar</button>
+            </div>
+        </section>
+    </header>
+
+    <section class="content">
+        <section class="left-bar">
+            <h2>Fabricantes</h2>
+            <div class="category">
+                <b onclick="window.location.href = ''">Novo Fabricante</b>
+                <b onclick="window.location.href = 'fabricantes.html'">Fabricante cadastrados</b>
+                <b onclick="window.location.href = 'fabricantes_desativados.html'">Fabricante desativados</b>
+            </div>
+        </section>
+
+        <section class="list-all">
+            <h1>Fabricantes cadastrados</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Mercado</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Zebra Technologies</td>
+                        <td>Coletores de Dados, Scanners, Impressoras, RFID</td>
+                        <td><button>Ver Informações</button> <button>Desativar Fabricante</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <div class="clear"></div>
+
+    <footer class="main-footer">
+        <div class="left-footer">
+            
+        </div>
+        <div class="middle-footer">
+            <img src="../img/preferences/logo.png" alt="">
+            <p>Nélio Marques Ramos - ME</p>
+            <p>05.369.050/0001-64</p>
+            <p>Rodovia Januário Carneiro, 876, Sala 204, Pau Pombo, Nova Lima, MG - CEP: 34.004-642</p>
+        </div>
+        <div class="right-footer">
+            
+        </div>
+    </footer>
+</body>
+</html>

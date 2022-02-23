@@ -1,0 +1,863 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+:root{
+    --main-color: #2a8ebf;
+    --sub-color: #217198;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 120px;
+    background: var(--main-color);
+}
+.mini-barra{
+    width: 90%;
+    height: 14px;
+    background: var(--sub-color);
+    color: #fff;
+    padding: 0.5% 5%;
+    font-size: 14px;
+}
+.mini-barra-esquerdo{
+    float: left;
+    width: 50%;
+}
+.mini-barra-direito{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.mini-barra-direito a{
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.mini-barra-direito a:hover{
+    font-weight: bold;
+}
+.barra-superior{
+    width: 90%;
+    height: 90px;
+    padding: 0% 5%;
+    color: #fff;
+}
+.logo-sec{
+    margin-top: 1%;
+    height: 75%;
+    float: left;
+    width: 20%;
+}
+.logo-sec img{
+    height: 100%;
+    filter: brightness(600%) grayscale(100%);
+}
+.menu-sec{
+    float: left;
+    height: 100%;
+    width: 55%;
+    line-height: 90px;
+}
+.menu-sec .menu ul li{
+    display: inline;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-bottom: 2px transparent solid;
+}
+.menu-sec .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.active{
+    border-bottom: 2px #fff solid !important;
+    padding: 0px 10px;
+}
+.menu-sec .menu ul li:hover{
+    border-bottom: 2px #fff solid;
+}
+.info-sec{
+    width: 13% !important;
+    text-align: right;
+}
+.info-sec, .user-icon{
+    float: left;
+    width: 10%;
+    height: 100%;
+    line-height: 90px;
+}
+.user-icon{
+    width: 5%;
+    line-height: 130px;
+}
+.user-icon img{
+    height: 50px;
+    margin-left: 10px;
+}
+.logoff{
+    float: left;
+    width: 5%;
+    height: 100%;
+    line-height: 90px;
+    text-align: center;
+    margin-left: 3px;
+}
+.logoff button{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: 2px var(--main-color) solid;
+    background: var(--sub-color);;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logoff button:hover{
+    border-bottom: 2px #fff solid;
+}
+.content{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-bottom: 20px;
+}
+.banner-sec{
+    width: 100%;
+    height: auto;
+    background: var(--sub-color);;
+    border-bottom: 2px var(--main-color) solid;
+}
+.banner-sec img{
+    width: 100%;
+    height: 100%;
+}
+.mini-banners-sec, .product-list{
+    width: 94%;
+    margin: 3% auto;
+}
+.mini-banner{
+    margin-bottom: 20px;
+    width: 22%;
+    min-height: 150px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 2%;
+    border-radius: 10px;
+    border: 2px var(--main-color) solid;
+    border-bottom: 5px var(--main-color) solid;
+}
+.mini-banner:last-child{
+    margin-right: none;
+}
+.mini-banner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-list{
+    border-left: 5px var(--main-color) solid;
+    padding-left: 5px;
+}
+.product-list .product-title{
+    font-size: 20px;
+    background: var(--main-color);
+    width: 30%;
+    height: 45px;
+    padding: 0px 1%;
+    line-height: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-box{
+    width: 225px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 10px;
+    text-align: center;
+    border-right: 1px #ddd solid;
+}
+.product-box img{
+    width: auto;
+    height: 70%;
+    border-radius: 5px;
+}
+.product-box p{
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: left;
+}
+.product-box button{
+    margin-top: 10px;
+    width: 49%;
+    height: 28px;
+    border: 2px transparent solid;
+    outline: none;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.product-box button:first-of-type{
+    background: var(--main-color) !important;
+    color: #fff;
+}
+.product-box button:first-of-type:hover{
+    border-bottom: 2px var(--sub-color) solid;
+}
+.product-box button:hover{
+    border-bottom: 2px var(--main-color) solid;
+}
+.product-box button:last-child{
+    margin-right: 0px;
+}
+.main-footer{
+    width: 97%;
+    padding: 20px;
+    height: 200px;
+    background: var(--main-color);
+    color: #fff;
+}
+.left-footer, .right-footer{
+    width: 25%;
+    height: 200px;
+    float: left;
+}
+.middle-footer{
+    width: 49%;
+    margin-left: 0.25%;
+    float: left;
+    height: 200px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+.middle-footer img{
+    margin-bottom: 50px;
+    filter: brightness(600%) grayscale(100%);
+}
+.right-footer{
+    float: right;
+}
+.fab{
+    margin-top: 2%;
+}
+.logo-fab{
+    float: left;
+    width: 15%;
+    height: 100px;
+    margin-right: 2%;
+    text-align: center;
+}
+.logo-fab img{
+    height: 100%;
+}
+.info-fab{
+    float: left;
+    width: 80%;
+    text-align: justify;
+    line-height: 24px;
+}
+.left-bar{
+    border-left: 5px var(--main-color) solid;
+    padding-left: 5px;
+    height: auto;
+    width: 20%;
+    margin: 3% 0% 3% 2.7%;
+    float: left;
+}
+.left-bar h2{
+    height: 40px;
+    background: var(--main-color);
+    width: 93%;
+    line-height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+.category{
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.category b{
+    padding: 5px 15px;
+    height: 35px;
+    border-bottom: 1px var(--main-color) solid;
+    transition: 0.1s;
+    cursor: pointer;
+    display: block;
+}
+.category b:first-of-type{
+    margin-top: 10px;
+}
+.category b:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+.list-all{
+    float: left;
+    width: 70%;
+    margin-left: 1%;
+}
+.info-box{
+    width: 100%;
+    padding: 25px 0px;
+}
+.info-box label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+}
+.info-box label input{
+    float: right;
+    width: 70%;
+    height: 25px;
+    outline: none;
+    border: 1px #ccc solid;
+    border-radius: 0px;
+    border-bottom: 2px #ccc solid;
+}
+.info-box label:after{
+    clear: both;
+}
+.atendimento-box{
+    width: 40%;
+    padding-top: 15px;
+}
+.atendimento-box h2{
+    margin: 15px 0px;
+}
+.atendimento-box p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.atendimento-box .product-title{
+    padding: 0px 50px 0px 10px;
+}
+.product-quote{
+    margin-top: 20px;
+}
+.product-quote table{
+    border: 1px #ccc solid;
+    width: 100%;
+}
+.product-quote table th{
+    padding: 20px;
+    border: 1px #ccc solid;
+    font-weight: bold;
+}
+.product-quote table td{
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    padding: 0px 20px;
+}
+.orc table .info-box input{
+    width: 50%;
+}
+.orc table textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 0px;
+    border: 1px #ccc solid;
+    outline: none;
+}
+.product-quote table th:first-child{
+    width: 62px;
+}
+.product-quote table td p:first-of-type{
+    font-weight: bold;
+}
+.product-quote table td img{
+    width: 100px;
+    height: 100px;
+}
+.product-quote table input{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border: 1px #ccc solid;
+    border-radius: 0px;
+    outline: none;
+}
+.product-page{
+    width: 85%;
+    margin: 5% auto;
+}
+.product-image{
+    float: left;
+    width: 30%;
+    border: 2px var(--main-color) solid;
+}
+.product-image img{
+    width: 100%;
+}
+.product-desc{
+    float: left;
+    width: 60%;
+}
+.product-desc h2{
+    background: var(--main-color);
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 5px 10px;
+    width: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-desc p, .tags, .product-desc button{
+    margin: 3% 0% 5% 5%;
+    text-align: justify;
+}
+.min-info{
+    margin-top: 3%;
+}
+.min-info p{
+    margin: 0% 0% 5px 5%;
+    font-weight: bold;
+}
+.tags b{
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 2px;
+    background: #fafafa;
+}
+.product-desc button, .product-quote button{
+    background: var(--main-color);
+    height: 40px;
+    border: none;
+    color: #fff;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+.value p{
+    margin: 0% 0% 0% 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.full-desc{
+    border: 1px #ccc solid;
+    padding: 50px;
+    text-align: justify;
+}
+.login, .cadastro{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.left-sec{
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    background: var(--sub-color);
+    transition: 0.5s;
+}
+.left-sec img{
+    width: 100%;
+    height: 100%;
+}
+.right-sec{
+    width: 30%;
+    transition: 0.5s;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    background: #fff;
+    padding: 5% 5% 0% 5%;
+    text-align: center;
+}
+.right-sec h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.right-sec form{
+    margin-top: 15%;
+    text-align: left;
+}
+.right-sec form input, .form-cad form input, .btn-rma{
+    width: 95%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 15px 0px;
+    border: none;
+    border-bottom: 2px var(--main-color) solid;
+    border-radius: none;
+    transition: 0.5s;
+    background: #fafafa;
+    outline: none;
+}
+.right-sec form label{
+    font-weight: bold;
+    font-size: 18px;
+}
+.right-sec form input:focus{
+    border-bottom: 2px var(--sub-color) solid;
+    background: #eeeeee;
+}
+.right-sec form input[type='submit'], .form-cad form input[type='submit'], .btn-rma, .form-rma input[type='submit']{
+    width: auto;
+    padding: 5px 20px;
+    background: var(--main-color);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.right-sec form input[type='submit']:hover, .btn-rma:hover, .form-rma input[type='submit']:hover{
+    border-bottom: 2px var(--sub-color) solid;
+}
+.right-sec form a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #ccc;
+    margin-left: 5%;
+    line-height: 30px;
+    transition: 0.5s;
+}
+.right-sec form a:hover{
+    color: var(--main-color);
+}
+.form-cad{
+    width: 85%;
+    height: 90%;
+    margin: 2% auto;
+    background: #fff;
+    padding: 0% 5%;
+    text-align: center;
+    overflow-y: scroll;
+    border-left: 5px var(--main-color) solid;
+}
+.form-cad h1{
+    margin: 2% 0% 5% 0%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.form-cad form{
+    text-align: left;
+}
+.form-cad form input{
+    width: 100%;
+}
+.left-form{
+    width: 50%;
+    float: left;
+}
+.right-form{
+    float: right;
+    width: 45%;
+}
+.list-desc{
+    margin-top: 2%;
+}
+.transportadoras{
+    margin-top: 3%;
+}
+.transportadora-info{
+    width: 200px;
+    height: 80px;
+    background: #eee;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.transportadora-info:hover{
+    background: #dbdbdb;
+}
+.transportadora-info h2{
+    width: 90%;
+    height: 50px;
+    background: var(--main-color);
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    text-align: left;
+    margin-bottom: 7px;
+}
+.transportadora-info a{
+    text-decoration: none;
+    color: var(--sub-color);
+    font-weight: bold;
+}
+.rma-term{
+    margin-top: 2%;
+    text-align: justify;
+}
+.btn-rma{
+    float: right;
+}
+.form-rma{
+    width: 50%;
+    margin-top: 2%;
+}
+.form-rma label{
+    display: block;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5%;
+    line-height: 30px;
+}
+.form-rma input, .form-rma textarea{
+    width: 50%;
+    float: right;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px var(--main-color) solid;
+    background: #eeeeee;
+    padding: 10px 15px;
+}
+.form-rma input[type='submit']{
+    height: 30px;
+}
+.form-rma textarea{
+    height: 100px;
+}
+.divisoria{
+    border: 2px var(--main-color) solid;
+    margin: 50px;
+}
+table tr th, table tr td{
+    width: auto;
+}
+.clear{
+    clear: both !important;
+}
+@media screen and (max-width: 800px){
+    .banner-sec{
+        border-bottom: 1px;
+    }
+    .cabecalho{
+        height: 110px;
+    }
+    .mini-barra{
+        height: 20px;
+        line-height: 20px;
+        width: 90%;
+    }
+    .logo-sec{
+        width: 100%;
+        text-align: center;
+        height: 70px;
+    }
+    .logo-sec img{
+        margin-top: 5px;
+        height: 60px;
+    }
+    .menu-sec, .info-sec, .user-icon, .logoff{
+        display: none;
+    }
+    .mini-banners-sec{
+        width: 95%;
+    }
+    .mini-banner{
+        width: 49%;
+        height: auto;
+        margin: 2% 0%;
+    }
+    .product-list{
+        width: 98%;
+        margin: 0px auto;
+        float: none;
+    }
+    .product-title{
+        width: 90% !important;
+    }
+    .product-box{
+        width: 30%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+    .product-box button{
+        width: 80%;
+    }
+    .product-box img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .cabecalho{
+        height: 100px;
+    }
+    .mini-barra{
+        height: 20px;
+        line-height: 20px;
+        padding: 0%;
+        width: 100%;
+    }
+    .mini-barra-esquerdo{
+        width: 100%;
+        text-align: center;
+    }
+    .mini-barra-direito{
+        display: none;
+    }
+    .barra-superior{
+        width: 100%;
+        padding: 0%;
+    }
+    .logo-sec{
+        width: 100%;
+        text-align: center;
+        height: 70px;
+    }
+    .logo-sec img{
+        margin-top: 5px;
+        height: 60px;
+    }
+    .menu-sec, .info-sec, .user-icon, .logoff{
+        display: none;
+    }
+    .mini-banners-sec{
+        width: 95%;
+    }
+    .mini-banner{
+        width: 48%;
+        height: auto;
+        margin: 2% 0%;
+    }
+    .main-footer{
+        width: 100%;
+        padding: 0px;
+        height: auto;
+    }
+    .left-footer, .right-footer{
+        float: none;
+        display: none;
+    }
+    .middle-footer{
+        float: none;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .product-list{
+        width: 90%;
+        margin: 0px auto;
+        float: none;
+    }
+    .product-box{
+        width: 45%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+    .product-box button{
+        width: 80%;
+    }
+    .product-box img{
+        width: 100%;
+        height: auto;
+    }
+    .left-bar{
+        width: 90%;
+        float: none;
+    }
+    .form-rma{
+        width: 90%;
+        margin-top: 2%;
+    }
+    .left-sec{
+        width: 0px;
+    }
+    .right-sec{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 360px){
+    .cabecalho{
+        height: 100px;
+    }
+    .mini-barra{
+        height: 20px;
+        line-height: 20px;
+        padding: 0%;
+        width: 100%;
+    }
+    .mini-barra-esquerdo{
+        width: 100%;
+        text-align: center;
+    }
+    .mini-barra-direito{
+        display: none;
+    }
+    .barra-superior{
+        width: 100%;
+        padding: 0%;
+    }
+    .logo-sec{
+        width: 100%;
+        text-align: center;
+        height: 70px;
+    }
+    .logo-sec img{
+        margin-top: 5px;
+        height: 60px;
+    }
+    .menu-sec, .info-sec, .user-icon, .logoff{
+        display: none;
+    }
+    .mini-banners-sec{
+        width: 95%;
+    }
+    .mini-banner{
+        width: 100%;
+        height: auto;
+        margin: 2% 0%;
+    }
+    .main-footer{
+        width: 100%;
+        padding: 0px;
+        height: auto;
+    }
+    .left-footer, .right-footer{
+        float: none;
+        display: none;
+    }
+    .middle-footer{
+        float: none;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .product-list{
+        width: 90%;
+        margin: 0px auto;
+        float: none;
+    }
+    .product-box{
+        width: 45%;
+        padding: 0px;
+        margin-right: 10px;
+    }
+    .product-box button{
+        width: 80%;
+    }
+    .product-box img{
+        width: 100%;
+        height: auto;
+    }
+    .left-bar{
+        width: 90%;
+        float: none;
+    }
+}

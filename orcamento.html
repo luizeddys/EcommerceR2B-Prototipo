@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="mini-barra">
+            <div class="mini-barra-esquerdo">
+                <b>Dólar do dia: R$ 5,5286</b>
+            </div>
+            <div class="mini-barra-direito">
+                <a href="minha-conta.html">Minha Conta</a>
+                <a href="orcamentos.html">Cotações</a>
+                <a href="atendimento.html">Atendimento</a>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <section class="barra-superior">
+            <div class="logo-sec">
+                <img src="img/preferences/logo.png" alt="">
+            </div>
+            <div class="menu-sec">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="fabricantes.html">Fabricantes</a></li>
+                        <li><a href="atendimento.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="info-sec">
+                <p>Bem-Vindo Luiz</p>
+            </div>
+            <div class="user-icon">
+                <img src="img/system/user-icon.png" alt="">
+            </div>
+            <div class="logoff">
+                <button>Sair</button>
+            </div>
+        </section>
+    </header>
+
+    <section class="content">
+        <section class="left-bar">
+            <h2>Conta</h2>
+            <div class="category">
+                <b onclick="window.location.href = 'minha-conta.html'">Informações</b>
+                <b onclick="window.location.href = 'alt-cadastro.html'">Alterar dados cadastrais</b>
+                <b onclick="window.location.href = 'alt-user.html'">Alterar informações de acesso</b>
+            </div>
+            <h2>Pedidos</h2>
+            <div class="category">
+                <b onclick="window.location.href = 'orcamentos.html'">Cotações</b>
+                <b onclick="window.location.href = 'pedidos.html'">Pedidos</b>
+                <b onclick="window.location.href = 'rastreio.html'">Rastreio</b>
+            </div>
+            <h2>Suporte</h2>
+            <div class="category">
+                <b onclick="window.location.href = 'atendimento.html'">Atendimento</b>
+                <b onclick="window.location.href = 'rma.html'">Devolução / Troca</b>
+            </div>
+        </section>
+
+        <section class="product-list list-all">
+            <h2 class="product-title">Revise sua solicitação</h2>
+            <div class="product-quote orc">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Informações do Cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="info-box">
+                                    <label for="">Razão Social <input type="text" readonly></label>
+                                    <label for="">CNPJ <input type="text" readonly></label>
+                                    <label for="">IE <input type="text" readonly></label>
+                                    <label for="">Endereço <input type="text" readonly></label>
+                                    <label for="">Telefone <input type="text" readonly></label>
+                                    <label for="">E-mail para envio de NF e boletos <input type="text" readonly></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Relação de Produtos</th>
+                        </tr>
+                        <tr>
+                            <th>PN</th>
+                            <th>Descrição</th>
+                            <th>Quantidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <tr>
+                                <td><p>PARTNUMBERITEM</p></td>
+                                <td><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria</p></td>
+                                <td><input type="text" name="qtd" value="1"></td>
+                                <td><button>Remover</button></td>
+                            </tr>
+                            <tr>
+                                <td><p>PARTNUMBERITEM</p></td>
+                                <td><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria</p></td>
+                                <td><input type="text" name="qtd" value="1"></td>
+                                <td><button>Remover</button></td>
+                            </tr>
+                            <tr>
+                                <td><p>PARTNUMBERITEM</p></td>
+                                <td><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria</p></td>
+                                <td><input type="text" name="qtd" value="1"></td>
+                                <td><button>Remover</button></td>
+                            </tr>
+                            <tr>
+                                <td><p>PARTNUMBERITEM</p></td>
+                                <td><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria</p></td>
+                                <td><input type="text" name="qtd" value="1"></td>
+                                <td><button>Remover</button></td>
+                            </tr>
+                            <tr>
+                                <td><p>PARTNUMBERITEM</p></td>
+                                <td><p>Lorem Ipsum é simplesmente uma simulação de texto da indústria</p></td>
+                                <td><input type="text" name="qtd" value="1"></td>
+                                <td><button>Remover</button></td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Informações Adicionais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <textarea name="" id=""></textarea>
+                                <button>Enviar Cotação</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <div class="clear"></div>
+
+    <footer class="main-footer">
+        <div class="left-footer">
+            
+        </div>
+        <div class="middle-footer">
+            <img src="img/preferences/logo.png" alt="">
+            <p>Nélio Marques Ramos - ME</p>
+            <p>05.369.050/0001-64</p>
+            <p>Rodovia Januário Carneiro, 876, Sala 204, Pau Pombo, Nova Lima, MG - CEP: 34.004-642</p>
+        </div>
+        <div class="right-footer">
+            
+        </div>
+    </footer>
+</body>
+</html>
